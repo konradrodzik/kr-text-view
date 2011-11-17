@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402A8E901475726A001C6FB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402A8E8F1475726A001C6FB6 /* UIKit.framework */; };
+		402A8E921475726A001C6FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402A8E911475726A001C6FB6 /* Foundation.framework */; };
+		402A8E941475726A001C6FB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402A8E931475726A001C6FB6 /* CoreGraphics.framework */; };
+		402A8E9A1475726A001C6FB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 402A8E981475726A001C6FB6 /* InfoPlist.strings */; };
+		402A8E9C1475726B001C6FB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A8E9B1475726A001C6FB6 /* main.m */; };
+		402A8EA01475726B001C6FB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A8E9F1475726B001C6FB6 /* AppDelegate.m */; };
+		402A8EA31475726B001C6FB6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402A8EA11475726B001C6FB6 /* MainStoryboard_iPhone.storyboard */; };
+		402A8EA61475726B001C6FB6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402A8EA41475726B001C6FB6 /* MainStoryboard_iPad.storyboard */; };
+		402A8EA91475726B001C6FB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A8EA81475726B001C6FB6 /* ViewController.m */; };
+		402A8EB8147572CB001C6FB6 /* KRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A8EB5147572CB001C6FB6 /* KRTextView.m */; };
+		402A8EB9147572CB001C6FB6 /* KRTextViewClickableLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A8EB7147572CB001C6FB6 /* KRTextViewClickableLink.m */; };
+		402A8EBC147572F7001C6FB6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402A8EBB147572F7001C6FB6 /* CoreText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		402A8E8B1475726A001C6FB6 /* KRTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		402A8E8F1475726A001C6FB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		402A8E911475726A001C6FB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		402A8E931475726A001C6FB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		402A8E971475726A001C6FB6 /* KRTextView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRTextView-Info.plist"; sourceTree = "<group>"; };
+		402A8E991475726A001C6FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		402A8E9B1475726A001C6FB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		402A8E9D1475726B001C6FB6 /* KRTextView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRTextView-Prefix.pch"; sourceTree = "<group>"; };
+		402A8E9E1475726B001C6FB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		402A8E9F1475726B001C6FB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		402A8EA21475726B001C6FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		402A8EA51475726B001C6FB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		402A8EA71475726B001C6FB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		402A8EA81475726B001C6FB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		402A8EB4147572CB001C6FB6 /* KRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRTextView.h; sourceTree = "<group>"; };
+		402A8EB5147572CB001C6FB6 /* KRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRTextView.m; sourceTree = "<group>"; };
+		402A8EB6147572CB001C6FB6 /* KRTextViewClickableLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRTextViewClickableLink.h; sourceTree = "<group>"; };
+		402A8EB7147572CB001C6FB6 /* KRTextViewClickableLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRTextViewClickableLink.m; sourceTree = "<group>"; };
+		402A8EBB147572F7001C6FB6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		402A8E881475726A001C6FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402A8EBC147572F7001C6FB6 /* CoreText.framework in Frameworks */,
+				402A8E901475726A001C6FB6 /* UIKit.framework in Frameworks */,
+				402A8E921475726A001C6FB6 /* Foundation.framework in Frameworks */,
+				402A8E941475726A001C6FB6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		402A8E801475726A001C6FB6 = {
+			isa = PBXGroup;
+			children = (
+				402A8EBB147572F7001C6FB6 /* CoreText.framework */,
+				402A8E951475726A001C6FB6 /* KRTextView */,
+				402A8E8E1475726A001C6FB6 /* Frameworks */,
+				402A8E8C1475726A001C6FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		402A8E8C1475726A001C6FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				402A8E8B1475726A001C6FB6 /* KRTextView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		402A8E8E1475726A001C6FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				402A8E8F1475726A001C6FB6 /* UIKit.framework */,
+				402A8E911475726A001C6FB6 /* Foundation.framework */,
+				402A8E931475726A001C6FB6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		402A8E951475726A001C6FB6 /* KRTextView */ = {
+			isa = PBXGroup;
+			children = (
+				402A8EB3147572CB001C6FB6 /* KRTextView */,
+				402A8E9E1475726B001C6FB6 /* AppDelegate.h */,
+				402A8E9F1475726B001C6FB6 /* AppDelegate.m */,
+				402A8EA11475726B001C6FB6 /* MainStoryboard_iPhone.storyboard */,
+				402A8EA41475726B001C6FB6 /* MainStoryboard_iPad.storyboard */,
+				402A8EA71475726B001C6FB6 /* ViewController.h */,
+				402A8EA81475726B001C6FB6 /* ViewController.m */,
+				402A8E961475726A001C6FB6 /* Supporting Files */,
+			);
+			path = KRTextView;
+			sourceTree = "<group>";
+		};
+		402A8E961475726A001C6FB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				402A8E971475726A001C6FB6 /* KRTextView-Info.plist */,
+				402A8E981475726A001C6FB6 /* InfoPlist.strings */,
+				402A8E9B1475726A001C6FB6 /* main.m */,
+				402A8E9D1475726B001C6FB6 /* KRTextView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		402A8EB3147572CB001C6FB6 /* KRTextView */ = {
+			isa = PBXGroup;
+			children = (
+				402A8EB4147572CB001C6FB6 /* KRTextView.h */,
+				402A8EB5147572CB001C6FB6 /* KRTextView.m */,
+				402A8EB6147572CB001C6FB6 /* KRTextViewClickableLink.h */,
+				402A8EB7147572CB001C6FB6 /* KRTextViewClickableLink.m */,
+			);
+			path = KRTextView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		402A8E8A1475726A001C6FB6 /* KRTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 402A8EAC1475726B001C6FB6 /* Build configuration list for PBXNativeTarget "KRTextView" */;
+			buildPhases = (
+				402A8E871475726A001C6FB6 /* Sources */,
+				402A8E881475726A001C6FB6 /* Frameworks */,
+				402A8E891475726A001C6FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRTextView;
+			productName = KRTextView;
+			productReference = 402A8E8B1475726A001C6FB6 /* KRTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		402A8E821475726A001C6FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 402A8E851475726A001C6FB6 /* Build configuration list for PBXProject "KRTextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 402A8E801475726A001C6FB6;
+			productRefGroup = 402A8E8C1475726A001C6FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				402A8E8A1475726A001C6FB6 /* KRTextView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		402A8E891475726A001C6FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402A8E9A1475726A001C6FB6 /* InfoPlist.strings in Resources */,
+				402A8EA31475726B001C6FB6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				402A8EA61475726B001C6FB6 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		402A8E871475726A001C6FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402A8E9C1475726B001C6FB6 /* main.m in Sources */,
+				402A8EA01475726B001C6FB6 /* AppDelegate.m in Sources */,
+				402A8EA91475726B001C6FB6 /* ViewController.m in Sources */,
+				402A8EB8147572CB001C6FB6 /* KRTextView.m in Sources */,
+				402A8EB9147572CB001C6FB6 /* KRTextViewClickableLink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		402A8E981475726A001C6FB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				402A8E991475726A001C6FB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		402A8EA11475726B001C6FB6 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				402A8EA21475726B001C6FB6 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		402A8EA41475726B001C6FB6 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				402A8EA51475726B001C6FB6 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		402A8EAA1475726B001C6FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		402A8EAB1475726B001C6FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		402A8EAD1475726B001C6FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRTextView/KRTextView-Prefix.pch";
+				INFOPLIST_FILE = "KRTextView/KRTextView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		402A8EAE1475726B001C6FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRTextView/KRTextView-Prefix.pch";
+				INFOPLIST_FILE = "KRTextView/KRTextView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		402A8E851475726A001C6FB6 /* Build configuration list for PBXProject "KRTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402A8EAA1475726B001C6FB6 /* Debug */,
+				402A8EAB1475726B001C6FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		402A8EAC1475726B001C6FB6 /* Build configuration list for PBXNativeTarget "KRTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402A8EAD1475726B001C6FB6 /* Debug */,
+				402A8EAE1475726B001C6FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 402A8E821475726A001C6FB6 /* Project object */;
+}
