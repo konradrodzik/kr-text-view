@@ -65,7 +65,7 @@
         self.fontSize = _fontSize;
         
         regexpDataArray = [[NSMutableArray alloc] initWithCapacity:5];
-        clickableLinks = FALSE;
+        clickableLinks = NO;
         
         self.backgroundColor = [UIColor clearColor];
     }
@@ -81,7 +81,7 @@
         self.fontSize = _fontSize;
         
         regexpDataArray = [[NSMutableArray alloc] initWithCapacity:5];
-        clickableLinks = FALSE;
+        clickableLinks = NO;
  
         self.backgroundColor = [UIColor clearColor];
     }
@@ -89,12 +89,23 @@
 	return self;
 }
 
+- (void)dealloc {
+	[displayedText release];
+    [displayedTextAttributes release];
+    [fontName release];
+    
+    [self clearAllExpressions];
+    [regexpDataArray release];
+    
+    [super dealloc];
+}
+
 -(void) addExpression:(NSString*)regExp withColor:(UIColor*)color {
     RegexpData *regexpData = [[RegexpData alloc] init];
     regexpData.regExp = regExp;
     regexpData.regExpColor = color;
     regexpData.runSelector = nil;
-    regexpData.matchedResults = [[NSMutableArray alloc] init];
+    regexpData.matchedResults = [NSMutableArray arrayWithCapacity:5];
     [regexpDataArray addObject:regexpData];
     [regexpData release];
 }
@@ -104,7 +115,7 @@
     regexpData.regExp = regExp;
     regexpData.regExpColor = color;
     regexpData.runSelector = selector;
-    regexpData.matchedResults = [[NSMutableArray alloc] init];
+    regexpData.matchedResults = [NSMutableArray arrayWithCapacity:5];
     [regexpDataArray addObject:regexpData];
     [regexpData release];
 }
@@ -195,12 +206,12 @@
                         
                         NSString* firstPartSelectedText = [NSString stringWithString:[displayedText substringWithRange:[[displayedTextAttributesRangeArray objectAtIndex:k] range]]];
                         for(RegexpData* data in regexpDataArray) {
-                            BOOL found = false;
+                            BOOL found = NO;
                             for(NSString* tmpText in data.matchedResults) {
                                 if([tmpText isEqualToString:firstPartSelectedText]) {
                                     firstPartOfLink.matchedText = firstPartSelectedText;
                                     firstPartOfLink.data = data;
-                                    found = TRUE;
+                                    found = YES;
                                     break;
                                 }
                             }
@@ -221,12 +232,12 @@
                             
                             NSString* secondPartSelectedText = [NSString stringWithString:[displayedText substringWithRange:[[displayedTextAttributesRangeArray objectAtIndex:k] range]]];
                             for(RegexpData* data in regexpDataArray) {
-                                BOOL found = false;
+                                BOOL found = NO;
                                 for(NSString* tmpText in data.matchedResults) {
                                     if([tmpText isEqualToString:secondPartSelectedText]) {
                                         secondPartOfLink.matchedText = secondPartSelectedText;
                                         secondPartOfLink.data = data;
-                                        found = TRUE;
+                                        found = YES;
                                         break;
                                     }
                                 }
@@ -255,17 +266,6 @@
     
     CTFrameDraw(displayedTextFrame, UIGraphicsGetCurrentContext());
 	CFRelease(displayedTextFrame);
-}
-
-- (void)dealloc {
-	[displayedText release];
-    [displayedTextAttributes release];
-    [fontName release];
-    
-    [self clearAllExpressions];
-    [regexpDataArray release];
-    
-    [super dealloc];
 }
 
 @end

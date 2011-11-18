@@ -48,7 +48,7 @@
     [postText addExpression:@"@([A-Za-z0-9_]+)" withColor:[UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f] runSelector:pageOpenSelector];
     [postText addExpression:@"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+" withColor:[UIColor colorWithRed:0.0f green:0.0f blue:1.0f alpha:1.0f] runSelector:pageOpenSelector];
     
-    postText.clickableLinks = TRUE;
+    postText.clickableLinks = YES;
     postText.displayedText = @"#polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl #polidea @konradrodzik http://www.polidea.pl";
 
     self.view = postText;
